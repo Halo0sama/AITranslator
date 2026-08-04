@@ -1,0 +1,16 @@
+Credits
+-------
+
+Design & visual assets adapted from:
+  Sui — Internal Beyond (https://github.com/Sui-IB/InternalBeyond)
+  Copyright (C) 2025-2026 Sui
+  Licensed under CC BY-NC-SA 4.0 (noncommercial).
+
+Modifications by Halo0sama:
+  - Compressed / upscaled background assets
+  - Rebuilt as a single-file translator
+  - Added water, rain, mist, and glass-wipe interactions
+  - Theme switching (Internal / Infernal), config import/export
+
+Fonts: Google Fonts (Cormorant Garamond, Raleway, Noto Sans SC,
+Noto Serif SC, Spectral, Great Vibes) — subject to their respective licenses.
