@@ -1,16 +1,48 @@
-# 便携 AI 翻译器
+# Portable AI Translator
 
 Author: [Halo](https://github.com/Halo0sama)
+
+A single-file, open-and-use offline web translator. Type any text and it translates between Chinese and English automatically, styled with the misty blue water, rain ripples and glass-wipe atmosphere of Internal Beyond.
+
+<p align="center">
+  <img src="screenshots/preview.png" width="80%" />
+</p>
+
+## Features
+
+- **Open & use**: single HTML file, no install, no backend
+- **Auto translate**: streaming output, Chinese ⇄ English, switchable direction
+- **Water effects**: rain, ripples, drag-to-stir; QUALITY / RAIN sliders in the top-right console
+- **Mist effects**: hazy fog with drag-to-wipe; MIST density and BRUSH size sliders
+- **Themes**: dark / light with Internal / Infernal visuals
+- **Universal config import**: TOML / JSON / .env / plain text
+- **Config export / import**: migrate between devices easily
+- **Local only**: all data stays in your browser
+
+## Usage
+
+1. Download `index.html` and open it in a browser.
+2. On first launch the settings dialog opens automatically: choose "Import from config file", or fill in API Key / endpoint / model manually.
+3. Save and start translating — it is ready every time you open it afterwards.
+
+## Live Demo
+
+https://halo0sama.github.io/ai-translator/
+
+## License & Credits
+
+Visual design and assets adapted from **Sui — Internal Beyond** (https://github.com/Sui-IB/InternalBeyond) under **CC BY-NC-SA 4.0**. See [LICENSE](./LICENSE) and [CREDITS.txt](./CREDITS.txt).
+
+---
+
+# 便携 AI 翻译器
+
+作者: [Halo](https://github.com/Halo0sama)
 
 一个**单文件、打开即用**的离线网页翻译器。输入文字自动在中文与英文之间互译；界面带有原版 Internal Beyond 风格的深蓝雾气、水面雨波与玻璃擦雾效果。
 
 <p align="center">
-  <img src="screenshots/preview-app-light.png" width="45%" />
-  <img src="screenshots/preview-app-dark.png" width="45%" />
-</p>
-
-<p align="center">
-  <img src="screenshots/preview-fog-wipe.png" width="90%" />
+  <img src="screenshots/preview.png" width="80%" />
 </p>
 
 ## 功能
@@ -36,11 +68,4 @@ https://halo0sama.github.io/ai-translator/
 
 ## 致谢与许可
 
-界面视觉与素材改编自 **Sui — Internal Beyond**（[Sui-IB/InternalBeyond](https://github.com/Sui-IB/InternalBeyond)），遵循 **CC BY-NC-SA 4.0**。
-
-- 已保留署名并链接原项目；
-- 修改内容：压缩 / 放大背景素材、重构为单文件翻译器、新增水面、雾气、雨量等交互；
-- 本仓库整体以 CC BY-NC-SA 4.0 发布，仅限非商业用途；
-- 本项目与原项目无关，不构成官方版本，也不暗示原项目作者背书。
-
-完整许可见 [LICENSE](./LICENSE)，素材致谢见 [CREDITS.txt](./CREDITS.txt)。
+界面视觉与素材改编自 **Sui — Internal Beyond**（https://github.com/Sui-IB/InternalBeyond），遵循 **CC BY-NC-SA 4.0**。详见 [LICENSE](./LICENSE) 与 [CREDITS.txt](./CREDITS.txt)。
