@@ -27,7 +27,7 @@ A single-file, open-and-use offline web translator. Type any text and it transla
 
 ## Live Demo
 
-https://halo0sama.github.io/ai-translator/
+https://halo0sama.github.io/Translator/
 
 ## License & Credits
 
@@ -64,7 +64,7 @@ Visual design and assets adapted from **Sui — Internal Beyond** (https://githu
 
 ## 在线使用
 
-https://halo0sama.github.io/ai-translator/
+https://halo0sama.github.io/Translator/
 
 ## 致谢与许可
 
