@@ -29,7 +29,7 @@ Beyond Mist is a single-file, open-and-use offline web translator. Type any text
 
 ## Live Demo
 
-https://halo0sama.github.io/AITranslator/
+https://halo0sama.github.io/BeyondMist/
 
 ## License & Credits
 
@@ -68,7 +68,7 @@ Visual design and assets adapted from **Sui — Internal Beyond** ([Sui-IB/Inter
 
 ## 在线使用
 
-https://halo0sama.github.io/AITranslator/
+https://halo0sama.github.io/BeyondMist/
 
 ## 致谢与许可
 
