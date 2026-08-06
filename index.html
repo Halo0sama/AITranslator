@@ -834,15 +834,15 @@
     <span id="brandText">Beyond Mist</span> <span class="nav-sub">Translator</span>
   </div>
   <div class="nav-actions">
-    <button class="nav-btn hide-mobile" id="exportBtn" title="导出配置">导出</button>
-    <button class="nav-btn hide-mobile" id="importConfigBtn" title="导入配置">导入</button>
+    <button class="nav-btn hide-mobile" id="exportBtn" title="导出配置" data-i18n="export">导出</button>
+    <button class="nav-btn hide-mobile" id="importConfigBtn" title="导入配置" data-i18n="import">导入</button>
     <input type="file" id="importConfigFile" accept=".json,application/json" hidden>
     <button class="theme-toggle" id="themeBtn" title="切换主题">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
     </button>
     <button class="nav-btn" id="settingsBtn" title="设置">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.03 1.56V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1.11-1.56 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.56-1.03H3a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.56-1.11 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34h.01A1.7 1.7 0 0 0 10.09 3V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1.03 1.56 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87v.01a1.7 1.7 0 0 0 1.56 1.03H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.56 1.11Z"/></svg>
-      <span class="btn-text">设置</span>
+      <span class="btn-text" data-i18n="settings">设置</span>
     </button>
   </div>
 </nav>
@@ -871,15 +871,15 @@
 
   <div class="top-bar">
     <div class="bar">
-      <span class="label">翻译为</span>
+      <span class="label" data-i18n="translateTo">翻译为</span>
       <div class="seg" id="targetSeg">
-        <button data-target="auto" class="active">自动</button>
-        <button data-target="zh">中文</button>
-        <button data-target="en">英文</button>
+        <button data-target="auto" class="active" data-i18n="auto">自动</button>
+        <button data-target="zh" data-i18n="zhLang">中文</button>
+        <button data-target="en" data-i18n="enLang">英文</button>
       </div>
     </div>
     <div class="bar">
-      <span class="label">模型</span>
+      <span class="label" data-i18n="model">模型</span>
       <div class="seg" id="modelSeg">
         <button data-model="deepseek-v4-flash" class="active" title="V4 Flash · 快">Flash</button>
         <button data-model="deepseek-v4-pro" title="V4 Pro · 8 月初开放">Pro</button>
@@ -891,20 +891,20 @@
     <textarea id="input" placeholder="输入或粘贴任意文字，自动翻译…" spellcheck="false"></textarea>
     <div class="input-foot">
       <span id="status">输入内容即自动翻译</span>
-      <button class="mini-btn" id="clearBtn" style="display:none">清空</button>
+      <button class="mini-btn" id="clearBtn" style="display:none" data-i18n="clear">清空</button>
     </div>
   </div>
 
   <div class="glass-card output-card">
     <div class="output-head">
       <span id="langInfo"></span>
-      <button class="mini-btn" id="copyBtn" style="display:none">复制译文</button>
+      <button class="mini-btn" id="copyBtn" style="display:none" data-i18n="copy">复制译文</button>
     </div>
-    <div id="output" class="empty">译文会显示在这里</div>
+    <div id="output" class="empty" data-i18n="outputEmpty">译文会显示在这里</div>
   </div>
 
   <footer>
-    模型：<span id="modelLabel">未配置</span> · 数据仅存于本地浏览器<br>
+    <span id="footerInfo">模型：<span id="modelLabel">未配置</span> · 数据仅存于本地浏览器</span><br>
     <span class="credit" id="creditText" title="点击切换标题样式">Design by <span class="credit-sui">Sui</span> &amp; <span class="credit-claude">Claude</span> <span class="credit-ver"> Opus 4.6</span> · Adapted from Internal Beyond</span>
   </footer>
 </main>
@@ -954,37 +954,44 @@
 <div class="overlay hidden" id="overlay">
   <div class="panel">
     <button class="close-x" id="closeSettings">×</button>
-    <h2>设置</h2>
+    <h2 data-i18n="settings">设置</h2>
     <div class="field">
-      <label>一键导入</label>
+      <label data-i18n="quickImport">一键导入</label>
       <div class="import-row">
-        <button class="btn" id="importBtn">从配置文件导入</button>
+        <button class="btn" id="importBtn" data-i18n="importFromFile">从配置文件导入</button>
         <input type="file" id="importFile" accept=".toml,.json,.env,.conf,text/plain,application/json" hidden>
       </div>
-      <div class="hint">选择你的 API 配置文件（TOML / JSON / .env），自动识别 API Key、接口地址和模型。</div>
+      <div class="hint" data-i18n="importHint">选择你的 API 配置文件（TOML / JSON / .env），自动识别 API Key、接口地址和模型。</div>
     </div>
     <div class="field">
       <label>API Key</label>
       <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off">
-      <div class="hint">保存在浏览器 localStorage，只在本机生效，不会上传到任何服务器。</div>
+      <div class="hint" data-i18n="apiKeyHint">保存在浏览器 localStorage，只在本机生效，不会上传到任何服务器。</div>
     </div>
     <div class="field">
-      <label>接口地址</label>
+      <label data-i18n="endpoint">接口地址</label>
       <input type="text" id="endpoint" value="https://api.deepseek.com/v1/responses" spellcheck="false">
-      <div class="hint">V4 系列走 Responses 接口（/v1/responses）。旧的 chat/completions 接口、OpenAI、中转站、本地 Ollama 代理也都兼容，自动识别。</div>
+      <div class="hint" data-i18n="endpointHint">V4 系列走 Responses 接口（/v1/responses）。旧的 chat/completions 接口、OpenAI、中转站、本地 Ollama 代理也都兼容，自动识别。</div>
     </div>
     <div class="field">
-      <label>模型</label>
+      <label data-i18n="model">模型</label>
       <input type="text" id="model" value="deepseek-v4-flash" spellcheck="false">
     </div>
     <div class="field">
-      <label>始终翻译为（自动模式）</label>
+      <label data-i18n="alwaysTo">始终翻译为（自动模式）</label>
       <input type="text" id="customTarget" placeholder="例如：日语、法语、English…" spellcheck="false">
-      <div class="hint">选择「自动」时，始终翻译成这个语言；留空则自动判断原文语言并翻译成相反语言。</div>
+      <div class="hint" data-i18n="alwaysToHint">选择「自动」时，始终翻译成这个语言；留空则自动判断原文语言并翻译成相反语言。</div>
+    </div>
+    <div class="field">
+      <label>语言 / Language</label>
+      <div class="seg" id="langSeg">
+        <button data-lang="zh" class="active">中文</button>
+        <button data-lang="en">English</button>
+      </div>
     </div>
     <div class="panel-actions">
-      <button class="btn" id="testBtn">测试连接</button>
-      <button class="btn btn-primary" id="saveBtn">保存</button>
+      <button class="btn" id="testBtn" data-i18n="test">测试连接</button>
+      <button class="btn btn-primary" id="saveBtn" data-i18n="save">保存</button>
     </div>
     <p id="testResult"></p>
   </div>
@@ -994,7 +1001,7 @@
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var LS_KEY = 'tr_apiKey', LS_EP = 'tr_endpoint', LS_MODEL = 'tr_model', LS_TARGET = 'tr_target', LS_QUALITY = 'tr_quality', LS_RAIN = 'tr_rain', LS_FOG = 'tr_fog', LS_BRUSH = 'tr_brush', LS_CUSTOM = 'tr_custom';
+  var LS_KEY = 'tr_apiKey', LS_EP = 'tr_endpoint', LS_MODEL = 'tr_model', LS_TARGET = 'tr_target', LS_QUALITY = 'tr_quality', LS_RAIN = 'tr_rain', LS_FOG = 'tr_fog', LS_BRUSH = 'tr_brush', LS_CUSTOM = 'tr_custom', LS_LANG = 'tr_lang';
   var OLD_EP = 'https://api.deepseek.com/v1/chat/completions';
 
   /* 旧版默认端点（chat/completions）自动迁移到 V4 Responses 配置 */
@@ -1017,8 +1024,123 @@
     rain: parseInt(localStorage.getItem(LS_RAIN) || '150', 10) || 150,
     fog: parseInt(localStorage.getItem(LS_FOG) || '100', 10) || 100,
     brush: parseInt(localStorage.getItem(LS_BRUSH) || '22', 10) || 22,
-    customTarget: localStorage.getItem(LS_CUSTOM) || ''
+    customTarget: localStorage.getItem(LS_CUSTOM) || '',
+    lang: localStorage.getItem(LS_LANG) || 'zh'
   };
+
+  /* ---------- 界面语言（中 / 英） ---------- */
+  var LANGS = {
+    zh: {
+      export: '导出', import: '导入', settings: '设置', translateTo: '翻译为',
+      auto: '自动', zhLang: '中文', enLang: '英文', model: '模型',
+      clear: '清空', copy: '复制译文', outputEmpty: '译文会显示在这里',
+      quickImport: '一键导入', importFromFile: '从配置文件导入',
+      importHint: '选择你的 API 配置文件（TOML / JSON / .env），自动识别 API Key、接口地址和模型。',
+      apiKeyHint: '保存在浏览器 localStorage，只在本机生效，不会上传到任何服务器。',
+      endpoint: '接口地址',
+      endpointHint: 'V4 系列走 Responses 接口（/v1/responses）。旧的 chat/completions 接口、OpenAI、中转站、本地 Ollama 代理也都兼容，自动识别。',
+      alwaysTo: '始终翻译为（自动模式）',
+      alwaysToHint: '选择「自动」时，始终翻译成这个语言；留空则自动判断原文语言并翻译成相反语言。',
+      customTargetPlaceholder: '例如：日语、法语、English…',
+      test: '测试连接', save: '保存',
+      inputPlaceholder: '输入或粘贴任意文字，自动翻译…',
+      noKeyPlaceholder: '先配置 API Key（设置已自动打开）',
+      statusIdle: '输入内容即自动翻译', busy: '正在翻译…', done: '已翻译 · ',
+      failed: '翻译失败', errorPrefix: '翻译失败：', copied: '已复制 ✓',
+      exported: '配置已导出 ✓', imported: '配置已导入 ✓',
+      footerModel: '模型：', footerData: '数据仅存于本地浏览器', notConfigured: '未配置',
+      designBy: 'Design by', builtBy: 'Built by', adaptedFrom: '· 改编自 Internal Beyond',
+      kickerLight: '雾中醒来的地方', kickerDark: '初次见面，却也像久别重逢。',
+      autoHint: '自动识别原文语言并翻译', autoHintCustom: '自动（始终翻译为：',
+      qTitle: '画质：左右拖动 / 滚轮', rainTitle: '雨量：0 关闭水面，左右拖动 / 滚轮',
+      fogTitle: '雾气：左右拖动 / 滚轮', brushTitle: '擦雾笔刷大小：左右拖动 / 滚轮',
+      resetFogTitle: '重置雾气', creditTitle: '点击切换标题样式',
+      qAria: '画质', rainAria: '雨量', fogAria: '雾气', brushAria: '笔刷',
+      exportTitle: '导出配置', importTitle: '导入配置', settingsTitle: '设置', themeTitle: '切换主题',
+      importOk: '已识别并填入配置 ✓ 记得点「保存」生效', importBad: '导入失败：文件格式错误',
+      testBusy: '测试中…', testOk: '连接正常 ✓ 接口与模型可用', testBadHttp: '失败：HTTP ', testBadFail: '失败：'
+    },
+    en: {
+      export: 'Export', import: 'Import', settings: 'Settings', translateTo: 'Translate to',
+      auto: 'Auto', zhLang: 'Chinese', enLang: 'English', model: 'Model',
+      clear: 'Clear', copy: 'Copy', outputEmpty: 'Translation will appear here',
+      quickImport: 'Quick import', importFromFile: 'Import from config file',
+      importHint: 'Pick your API config file (TOML / JSON / .env). API key, endpoint and model are detected automatically.',
+      apiKeyHint: 'Stored in browser localStorage. Never uploaded to any server.',
+      endpoint: 'Endpoint',
+      endpointHint: 'V4 uses the Responses API (/v1/responses). Legacy chat/completions, OpenAI, proxies and local Ollama are also supported and detected automatically.',
+      alwaysTo: 'Always translate to (Auto mode)',
+      alwaysToHint: 'When Auto is selected, always translate into this language. Leave empty to detect the source language and translate to the opposite.',
+      customTargetPlaceholder: 'e.g. Japanese, French, English…',
+      test: 'Test connection', save: 'Save',
+      inputPlaceholder: 'Type or paste text to translate…',
+      noKeyPlaceholder: 'Configure API Key first (settings opened automatically)',
+      statusIdle: 'Type to translate automatically', busy: 'Translating…', done: 'Translated · ',
+      failed: 'Translation failed', errorPrefix: 'Translation failed: ', copied: 'Copied ✓',
+      exported: 'Config exported ✓', imported: 'Config imported ✓',
+      footerModel: 'Model: ', footerData: 'Data stays in your browser', notConfigured: 'Not configured',
+      designBy: 'Design by', builtBy: 'Built by', adaptedFrom: '· Adapted from Internal Beyond',
+      kickerLight: 'A place of waking in the mist', kickerDark: "It's our first meeting, but also long time no see.",
+      autoHint: 'Auto-detect source language', autoHintCustom: 'Auto (always translate to: ',
+      qTitle: 'Quality: drag / scroll', rainTitle: 'Rain: 0 disables water, drag / scroll',
+      fogTitle: 'Mist: drag / scroll', brushTitle: 'Fog brush size: drag / scroll',
+      resetFogTitle: 'Reset mist', creditTitle: 'Click to switch title style',
+      qAria: 'Quality', rainAria: 'Rain', fogAria: 'Mist', brushAria: 'Brush',
+      exportTitle: 'Export config', importTitle: 'Import config', settingsTitle: 'Settings', themeTitle: 'Toggle theme',
+      importOk: 'Config recognized ✓ Remember to Save', importBad: 'Import failed: invalid file',
+      testBusy: 'Testing…', testOk: 'Connection OK ✓', testBadHttp: 'Failed: HTTP ', testBadFail: 'Failed: '
+    }
+  };
+  var uiLang = cfg.lang === 'en' ? 'en' : 'zh';
+  function t(key) {
+    return (LANGS[uiLang] && LANGS[uiLang][key] !== undefined) ? LANGS[uiLang][key] : (LANGS.zh[key] !== undefined ? LANGS.zh[key] : key);
+  }
+  function setLangSeg() {
+    var btns = $('langSeg').querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.toggle('active', btns[i].getAttribute('data-lang') === cfg.lang);
+    }
+  }
+  function applyLang() {
+    uiLang = cfg.lang === 'en' ? 'en' : 'zh';
+    document.documentElement.setAttribute('lang', uiLang === 'zh' ? 'zh-CN' : 'en');
+    var nodes = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < nodes.length; i++) nodes[i].textContent = t(nodes[i].getAttribute('data-i18n'));
+    inputEl.placeholder = cfg.apiKey ? t('inputPlaceholder') : t('noKeyPlaceholder');
+    $('customTarget').placeholder = t('customTargetPlaceholder');
+    $('exportBtn').title = t('exportTitle');
+    $('importConfigBtn').title = t('importTitle');
+    $('settingsBtn').title = t('settingsTitle');
+    $('themeBtn').title = t('themeTitle');
+    $('fxThermQuality').title = t('qTitle');
+    $('fxThermRain').title = t('rainTitle');
+    $('fxThermFog').title = t('fogTitle');
+    $('fxThermBrush').title = t('brushTitle');
+    $('resetFogBtn').title = t('resetFogTitle');
+    $('creditText').title = t('creditTitle');
+    $('fxThermQuality').setAttribute('aria-label', t('qAria'));
+    $('fxThermRain').setAttribute('aria-label', t('rainAria'));
+    $('fxThermFog').setAttribute('aria-label', t('fogAria'));
+    $('fxThermBrush').setAttribute('aria-label', t('brushAria'));
+    if (statusEl.textContent === '输入内容即自动翻译' || statusEl.textContent === 'Type to translate automatically') {
+      statusEl.textContent = t('statusIdle');
+    }
+    if (outputEl.textContent === '译文会显示在这里' || outputEl.textContent === 'Translation will appear here') {
+      outputEl.textContent = t('outputEmpty');
+    }
+    $('footerInfo').innerHTML = t('footerModel') + ' <span id="modelLabel">' + $('modelLabel').textContent + '</span> · ' + t('footerData');
+    syncThemeBtn();
+    applyThemeTexts();
+    syncAutoHint();
+    setLangSeg();
+  }
+  $('langSeg').addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    cfg.lang = btn.getAttribute('data-lang');
+    localStorage.setItem(LS_LANG, cfg.lang);
+    applyLang();
+  });
 
   var inputEl = $('input'), outputEl = $('output'), statusEl = $('status');
   var composing = false, debounceTimer = null, reqId = 0;
@@ -1032,12 +1154,17 @@
     if (cfg.customTarget) return cfg.customTarget;
     return detectLang(text) === 'zh' ? 'en' : 'zh';
   }
-  function langName(l) { return l === 'zh' ? '中文' : (l === 'en' ? '英文' : l); }
+  function langName(l) {
+    if (uiLang === 'zh') return l === 'zh' ? '中文' : (l === 'en' ? '英文' : l);
+    return l === 'zh' ? 'Chinese' : (l === 'en' ? 'English' : l);
+  }
   function isResponsesApi() { return /responses/.test(cfg.endpoint); }
   function syncAutoHint() {
     var btn = document.querySelector('#targetSeg button[data-target="auto"]');
     if (btn) {
-      btn.title = cfg.customTarget ? '自动（始终翻译为：' + cfg.customTarget + '）' : '自动识别原文语言并翻译';
+      btn.title = cfg.customTarget
+        ? t('autoHintCustom') + cfg.customTarget + (uiLang === 'zh' ? '）' : ')')
+        : t('autoHint');
     }
   }
 
@@ -1060,19 +1187,19 @@
     var text = inputEl.value.trim();
     if (!text) {
       reqId++;
-      outputEl.textContent = '译文会显示在这里';
+      outputEl.textContent = t('outputEmpty');
       outputEl.className = 'empty';
       $('langInfo').textContent = '';
       $('copyBtn').style.display = 'none';
       $('clearBtn').style.display = 'none';
-      setStatus('输入内容即自动翻译');
+      setStatus(t('statusIdle'));
       return;
     }
     $('clearBtn').style.display = '';
     var myReq = ++reqId;
     var target = targetLangFor(text);
     var started = performance.now();
-    setStatus('正在翻译…', 'busy');
+    setStatus(t('busy'), 'busy');
 
     translate(text, target)
       .then(function (translated) {
@@ -1082,14 +1209,14 @@
         $('langInfo').textContent = langName(detectLang(text)) + ' → ' + langName(target);
         $('copyBtn').style.display = '';
         var ms = Math.round(performance.now() - started);
-        setStatus('已翻译 · ' + ms + ' ms');
+        setStatus(t('done') + ms + ' ms');
       })
       .catch(function (err) {
         if (myReq !== reqId) return;
         outputEl.textContent = '';
         outputEl.className = 'empty';
         $('langInfo').textContent = '';
-        setStatus('翻译失败', 'error');
+        setStatus(t('failed'), 'error');
         showError(err.message || String(err));
       });
   }
@@ -1097,7 +1224,7 @@
   function translate(text, target) {
     return streamTranslate(text, target).catch(function (streamErr) {
       return plainTranslate(text, target).catch(function () {
-        throw new Error(streamErr.message || '翻译失败');
+        throw new Error(streamErr.message || t('failed'));
       });
     });
   }
@@ -1219,7 +1346,7 @@
   }
 
   function showError(msg) {
-    outputEl.textContent = '翻译失败：' + msg;
+    outputEl.textContent = t('errorPrefix') + msg;
     outputEl.className = 'empty';
   }
 
@@ -1246,8 +1373,8 @@
     if (!text) return;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(function () {
-        $('copyBtn').textContent = '已复制 ✓';
-        setTimeout(function () { $('copyBtn').textContent = '复制译文'; }, 1200);
+        $('copyBtn').textContent = t('copied');
+        setTimeout(function () { $('copyBtn').textContent = t('copy'); }, 1200);
       });
     }
   });
@@ -1412,6 +1539,7 @@
     $('endpoint').value = cfg.endpoint;
     $('model').value = cfg.model;
     $('customTarget').value = cfg.customTarget;
+    setLangSeg();
     $('testResult').textContent = '';
     $('testResult').className = '';
     overlay.classList.remove('hidden');
@@ -1484,7 +1612,7 @@
       if (model) $('model').value = model;
       var out = $('testResult');
       out.className = 'ok';
-      out.textContent = '已识别并填入配置 ✓ 记得点「保存」生效';
+      out.textContent = t('importOk');
     };
     reader.readAsText(f);
   });
@@ -1511,7 +1639,7 @@
     var key = $('apiKey').value.trim();
     var out = $('testResult');
     out.className = '';
-    out.textContent = '测试中…';
+    out.textContent = t('testBusy');
     var body = /responses/.test(ep)
       ? { model: model, input: [{ role: 'user', content: [{ type: 'input_text', text: 'hi' }] }], max_output_tokens: 5 }
       : { model: model, messages: [{ role: 'user', content: 'hi' }], max_tokens: 5 };
@@ -1523,14 +1651,14 @@
       if (!res.ok) {
         return res.json().catch(function () { return {}; }).then(function (j) {
           out.className = 'bad';
-          out.textContent = '失败：HTTP ' + res.status + (j.error && j.error.message ? ' · ' + j.error.message : '');
+          out.textContent = t('testBadHttp') + res.status + (j.error && j.error.message ? ' · ' + j.error.message : '');
         });
       }
       out.className = 'ok';
-      out.textContent = '连接正常 ✓ 接口与模型可用';
+      out.textContent = t('testOk');
     }).catch(function (err) {
       out.className = 'bad';
-      out.textContent = '失败：' + err.message;
+      out.textContent = t('testBadFail') + err.message;
     });
   });
 
@@ -1544,13 +1672,12 @@
   function applyThemeTexts() {
     var dark = document.documentElement.getAttribute('data-theme') === 'dark';
     $('brandText').textContent = dark ? 'Infernal Mist' : 'Beyond Mist';
-    $('kickerText').textContent = dark ? "It's our first meeting, but also long time no see." : 'A place of waking in the mist';
+    $('kickerText').textContent = dark ? t('kickerDark') : t('kickerLight');
     $('headTitleInternal').textContent = dark ? 'Infernal' : 'Beyond';
     $('creditText').innerHTML =
-      (dark ? 'Built by ' : 'Design by ') +
+      (dark ? t('builtBy') : t('designBy')) + ' ' +
       '<span class="credit-sui">Sui</span> &amp; <span class="credit-claude">Claude</span>' +
-      '<span class="credit-ver"> Opus 4.6</span> · Adapted from ' +
-      (dark ? 'Infernal' : 'Internal') + ' Beyond';
+      '<span class="credit-ver"> Opus 4.6</span> ' + t('adaptedFrom');
   }
   $('themeBtn').addEventListener('click', function () {
     var cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -1580,6 +1707,7 @@
       model: cfg.model,
       target: cfg.target,
       customTarget: cfg.customTarget,
+      lang: cfg.lang,
       quality: cfg.quality,
       rain: cfg.rain,
       fog: cfg.fog,
@@ -1595,7 +1723,7 @@
     a.click();
     a.remove();
     setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-    setStatus('配置已导出 ✓');
+    setStatus(t('exported'));
   });
   $('importConfigBtn').addEventListener('click', function () { $('importConfigFile').click(); });
   $('importConfigFile').addEventListener('change', function () {
@@ -1615,6 +1743,10 @@
           $('customTarget').value = d.customTarget;
           localStorage.setItem(LS_CUSTOM, d.customTarget);
         }
+        if (d.lang) {
+          cfg.lang = d.lang;
+          localStorage.setItem(LS_LANG, d.lang);
+        }
         if (d.quality) applyQuality(d.quality);
         if (d.rain !== undefined) applyRain(d.rain);
         if (d.fog !== undefined) applyFog(d.fog);
@@ -1630,10 +1762,11 @@
           applyThemeTexts();
         }
         setModelSeg();
+        applyLang();
         $('modelLabel').textContent = cfg.model;
-        setStatus('配置已导入 ✓');
+        setStatus(t('imported'));
       } catch (err) {
-        setStatus('导入失败：文件格式错误', 'error');
+        setStatus(t('importBad'), 'error');
       }
     };
     reader.readAsText(f);
@@ -1651,6 +1784,8 @@
   setFogSlider();
   setBrushSlider();
   syncAutoHint();
+  setLangSeg();
+  applyLang();
   document.body.classList.toggle('no-water', cfg.rain === 0);
   window.TR_QUALITY = cfg.quality;
   window.TR_RAIN = cfg.rain / 100;
@@ -1659,7 +1794,6 @@
   syncThemeBtn();
   applyThemeTexts();
   if (!cfg.apiKey) {
-    inputEl.placeholder = '先配置 API Key（设置已自动打开）';
     setTimeout(openSettings, 500);
   }
 })();

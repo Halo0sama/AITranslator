@@ -13,6 +13,7 @@ Beyond Mist is a single-file, open-and-use offline web translator. Type any text
 - **Open & use**: single HTML file, no install, no backend
 - **Auto translate**: streaming output, Chinese ⇄ English, switchable direction
 - **Always translate to**: set a custom target language for Auto mode (e.g. Japanese, French)
+- **Bilingual UI**: switch the interface between Chinese and English (Settings → Language)
 - **Water effects**: rain, ripples, drag-to-stir; QUALITY / RAIN sliders in the top-right console
 - **Mist effects**: hazy fog with drag-to-wipe; MIST density and BRUSH size sliders
 - **Themes**: dark / light with Internal / Infernal visuals
@@ -51,6 +52,7 @@ Visual design and assets adapted from **Sui — Internal Beyond** ([Sui-IB/Inter
 - **打开即用**：单 HTML 文件，无需安装、无需后端，双击即可使用
 - **自动翻译**：输入即自动翻译，支持流式输出；中英互译，语言方向可切换
 - **始终翻译为**：自动模式下可自由输入目标语言（如日语、法语），无需选择框
+- **中英界面**：设置里可一键切换界面语言（中文 / English）
 - **水面效果**：雨丝、涟漪、拖拽拨水；右上角 QUALITY / RAIN 温度计调节
 - **雾气效果**：整页朦胧雾气，按住拖动即可擦开；MIST 调节浓度，BRUSH 调节笔刷
 - **主题切换**：深色 / 浅色，背景与文案跟随 Internal / Infernal 切换
