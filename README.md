@@ -37,7 +37,7 @@ Visual design and assets adapted from **Sui — Internal Beyond** ([Sui-IB/Inter
 
 # 雾境彼岸翻译器
 
-雾境彼岸是一个**单文件、打开即用**的离线网页翻译器。输入文字即自动翻译；界面带有原版 Internal Beyond 欢迎页的深蓝雾气、水面雨波与玻璃擦雾效果——如雾中醒来。
+雾境彼岸是一个**单文件、打开即用**的离线网页翻译器。输入文字即自动翻译；界面带有原版 Internal Beyond 风格的深蓝雾气、水面雨波与玻璃擦雾效果——如雾中醒来。
 
 <p align="center">
   <img src="screenshots/preview.png" width="80%" />
