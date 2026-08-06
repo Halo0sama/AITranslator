@@ -1,7 +1,5 @@
 # Beyond Mist Translator
 
-Author: [Halo](https://github.com/Halo0sama)
-
 Beyond Mist is a single-file, open-and-use offline web translator. Type any text and it translates automatically, styled with the misty blue water, rain ripples and glass-wipe atmosphere of Internal Beyond — a place of waking in the mist.
 
 ## About
@@ -42,8 +40,6 @@ Visual design and assets adapted from **Sui — Internal Beyond** ([Sui-IB/Inter
 ---
 
 # 雾境彼岸翻译器
-
-作者: [Halo](https://github.com/Halo0sama)
 
 雾境彼岸是一个**单文件、打开即用**的离线网页翻译器。输入文字即自动翻译；界面带有原版 Internal Beyond 欢迎页的深蓝雾气、水面雨波与玻璃擦雾效果——如雾中醒来。
 
