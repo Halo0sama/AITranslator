@@ -2,12 +2,6 @@
 
 Beyond Mist is a single-file, open-and-use offline web translator. Type any text and it translates automatically, styled with the misty blue water, rain ripples and glass-wipe atmosphere of Internal Beyond — a place of waking in the mist.
 
-## About
-
-A personal offline web translator: no backend, no sign-up, and no data leaves your browser. Mist, rain, ripples and the glass-wipe effect are all rendered locally, and the interface is available in Chinese and English.
-
-个人离线网页翻译器：无需后端、无需注册，数据不出浏览器。雾气、雨丝、涟漪、擦雾等效果全部本地渲染，界面支持中文与 English 一键切换。
-
 <p align="center">
   <img src="screenshots/preview.png" width="80%" />
 </p>
