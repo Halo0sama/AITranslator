@@ -32,7 +32,7 @@ https://halo0sama.github.io/AITranslator/
 
 ## License & Credits
 
-Visual design and assets adapted from **Sui — Internal Beyond** (https://github.com/Sui-IB/InternalBeyond) under **CC BY-NC-SA 4.0**. See [LICENSE](./LICENSE) and [CREDITS.txt](./CREDITS.txt).
+Visual design and assets adapted from **Sui — Internal Beyond** ([Sui-IB/InternalBeyond](https://github.com/Sui-IB/InternalBeyond)) under **CC BY-NC-SA 4.0**. See [LICENSE](./LICENSE) and [CREDITS.txt](./CREDITS.txt).
 
 ---
 
@@ -70,4 +70,4 @@ https://halo0sama.github.io/AITranslator/
 
 ## 致谢与许可
 
-界面视觉与素材改编自 **Sui — Internal Beyond**（https://github.com/Sui-IB/InternalBeyond），遵循 **CC BY-NC-SA 4.0**。详见 [LICENSE](./LICENSE) 与 [CREDITS.txt](./CREDITS.txt)。
+界面视觉与素材改编自 **Sui — Internal Beyond**（[Sui-IB/InternalBeyond](https://github.com/Sui-IB/InternalBeyond)），遵循 **CC BY-NC-SA 4.0**。详见 [LICENSE](./LICENSE) 与 [CREDITS.txt](./CREDITS.txt)。

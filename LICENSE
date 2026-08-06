@@ -2,7 +2,7 @@
 
 ## 本项目（便携 AI 翻译器）
 
-本项目是 **Sui — Internal Beyond**（https://github.com/Sui-IB/InternalBeyond）的
+本项目是 **Sui — Internal Beyond**（[Sui-IB/InternalBeyond](https://github.com/Sui-IB/InternalBeyond)）的
 非商业改编作品。界面视觉与素材按 **Creative Commons Attribution-NonCommercial-
 ShareAlike 4.0 International（CC BY-NC-SA 4.0）** 授权使用与发布。
 
@@ -11,7 +11,7 @@ ShareAlike 4.0 International（CC BY-NC-SA 4.0）** 授权使用与发布。
 
 ## 署名（Attribution）
 
-- 原作品：**Sui — Internal Beyond**（https://github.com/Sui-IB/InternalBeyond）
+- 原作品：**Sui — Internal Beyond**（[Sui-IB/InternalBeyond](https://github.com/Sui-IB/InternalBeyond)）
 - 改编说明：压缩 / 放大背景素材，重构为单文件翻译器，新增水面、雨丝、雾气、
   擦雾交互、主题切换等改动。
 - 本项目改编者：Halo0sama
